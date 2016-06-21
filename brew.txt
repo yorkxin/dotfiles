@@ -1,0 +1,17 @@
+aria2
+git
+httpie
+imagemagick
+mas
+mycli
+mysql
+node
+phantomjs
+rbenv
+rbenv-default-gems
+readline
+redis
+stow
+wget
+zsh-syntax-highlighting
+
