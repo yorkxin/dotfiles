@@ -1,5 +1,7 @@
 firefox
 firefoxdeveloperedition
+google-chrome
+google-chrome-canary
 imageoptim
 mou
 
