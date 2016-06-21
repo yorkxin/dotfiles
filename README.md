@@ -34,5 +34,5 @@ Run the scripts inside `~/.dotfiles`
 
 ## License
 
-CC0 (Public Domain)
+MIT License
 
