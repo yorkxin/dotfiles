@@ -2,12 +2,29 @@
 
 My configurations
 
-## Install
+## Before use
 
-Requires GNU Stow:
+The setup script depends on some tools:
 
-    $ brew install stow
+First, install [Homebrew](http://brew.sh/).
 
-## Apply Settings (RC Files)
+Then install tools required:
+
+    $ brew install git stow
+
+Then download the git repository:
+
+    $ git clone git@github.com:chitsaou/dotfiles.git ~/.dotfiles
+
+## How to use
+
+Run the scripts inside `~/.dotfiles`
+
+### Install a new machine
 
     $ ./setup.sh
+
+### Apply Settings (RC Files)
+
+    $ ./install-rc.sh
+
