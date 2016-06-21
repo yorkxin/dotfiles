@@ -2,11 +2,15 @@ aria2
 git
 httpie
 mas
+mtr
 rbenv
 rbenv-default-gems
 readline
 redis
 stow
+the_silver_searcher
+tree
 wget
+xz
 zsh-syntax-highlighting
 
