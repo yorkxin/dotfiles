@@ -1,3 +1,2 @@
-cd rc
-stow -vv * --target ~
-
+# symlink rc files from ./rc/ to ~/
+./install-rc.sh
