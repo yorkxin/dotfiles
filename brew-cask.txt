@@ -1,1 +1,3 @@
 imageoptim
+firefox
+firefoxdeveloperedition
