@@ -28,3 +28,11 @@ Run the scripts inside `~/.dotfiles`
 
     $ ./install-rc.sh
 
+## Side Notes
+
+* [GNU Stow](https://www.gnu.org/software/stow/) is a tool to symlink files inside directories in a batch. I got this idea from [shashankmehta's dotfiles](https://github.com/shashankmehta/dotfiles).
+
+## License
+
+CC0 (Public Domain)
+
