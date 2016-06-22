@@ -51,6 +51,7 @@ ZSH_THEME="gitster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   bundler
+  docker
   git
   osx
   gem
