@@ -1,6 +1,6 @@
 firefox
 firefoxdeveloperedition
-google-chrome
+google-chrome-beta
 google-chrome-canary
 imageoptim
 mou
