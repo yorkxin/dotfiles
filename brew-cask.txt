@@ -4,4 +4,5 @@ google-chrome-beta
 google-chrome-canary
 imageoptim
 mou
+0xed
 
