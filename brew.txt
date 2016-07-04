@@ -1,6 +1,7 @@
 aria2
 ctags
 git
+gnu-sed
 httpie
 mas
 mtr
