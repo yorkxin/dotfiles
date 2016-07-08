@@ -5,4 +5,5 @@ google-chrome-canary
 imageoptim
 mou
 0xed
+visual-studio-code
 
