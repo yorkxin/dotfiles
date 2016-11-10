@@ -1,4 +1,8 @@
+brew tap universal-ctags/universal-ctags
+
 cat brew.txt | xargs brew install
+
+brew install --HEAD universal-ctags
 
 brew tap caskroom/versions
 
