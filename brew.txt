@@ -6,6 +6,7 @@ gnu-sed
 httpie
 mas
 mtr
+pyenv
 rbenv
 rbenv-default-gems
 readline
