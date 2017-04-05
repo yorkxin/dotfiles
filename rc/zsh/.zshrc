@@ -99,3 +99,6 @@ export EDITOR='vim'
 eval "$(rbenv init -)"
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# remove alias of bcn from "bundler" plugin, in order to use degica/barcelona-cli
+unalias bcn
