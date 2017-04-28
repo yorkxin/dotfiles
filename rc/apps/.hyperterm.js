@@ -55,10 +55,20 @@ module.exports = {
   //   `hypersolar`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: [
+    'hyper-material-theme',
+    'hyperterm-safepaste',
+    'hyperlinks',
+    'hyper-tabs-enhanced',
+    'hyper-statusline'
+  ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: []
+  localPlugins: [],
+
+  hyperTabs: {
+    trafficButtons: true,
+  },
 };
