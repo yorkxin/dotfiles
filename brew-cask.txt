@@ -1,8 +1,0 @@
-firefox
-firefoxdeveloperedition
-google-chrome-beta
-google-chrome-canary
-imageoptim
-0xed
-visual-studio-code
-
