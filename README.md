@@ -20,7 +20,7 @@ Then download the git repository:
 
 Run the scripts inside `~/.dotfiles`
 
-### Install a new machine
+### Install a new machine / update software
 
     $ ./setup.sh
 
@@ -28,9 +28,14 @@ Run the scripts inside `~/.dotfiles`
 
     $ ./install-rc.sh
 
-## Side Notes
+## Tools used
 
-* [GNU Stow](https://www.gnu.org/software/stow/) is a tool to symlink files inside directories in a batch. I got this idea from [shashankmehta's dotfiles](https://github.com/shashankmehta/dotfiles).
+* [GNU Stow](https://www.gnu.org/software/stow/)
+  * Symlinks files inside directories in a batch. Inspired from [shashankmehta's dotfiles](https://github.com/shashankmehta/dotfiles).
+* [Homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
+  * Manages Homebrew formulae with a Ruby style Brewfile
+* [mas-cli](https://github.com/mas-cli/mas)
+  * Installs macOS apps from Mac App Store
 
 ## Credits
 
@@ -39,4 +44,3 @@ Run the scripts inside `~/.dotfiles`
 ## License
 
 MIT License
-
