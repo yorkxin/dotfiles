@@ -2,6 +2,7 @@
 cask_args appdir: '/Applications', force: true
 
 tap 'caskroom/cask'
+tap 'caskroom/fonts'
 tap 'universal-ctags/universal-ctags'
 
 brew 'aria2'
@@ -59,6 +60,24 @@ cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
 cask 'vlc'
+
+# Fonts
+cask 'font-fira-code'
+cask 'font-fira-sans'
+# FIXME: genn jyuu font download is slow (even from Japan)
+# cask 'font-genjyuugothic'
+# cask 'font-genjyuugothic-l'
+# cask 'font-genjyuugothic-x'
+cask 'font-hack'
+cask 'font-inconsolata'
+cask 'font-input'
+cask 'font-source-code-pro'
+cask 'font-source-sans-pro'
+cask 'font-source-serif-pro'
+cask 'font-source-han-sans'
+# FIXME: 1.001 does not available on Cask fonts. Try this later when it gets fixed
+# cask 'font-source-han-serif-el-m'
+# cask 'font-source-han-serif-sb-h'
 
 mas 'Debit & Credit', id: 882637653
 mas 'The Unarchiver', id: 425424353
