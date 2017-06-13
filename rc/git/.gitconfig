@@ -19,3 +19,9 @@
 	required = true
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
+
+# Add all machine-specific settings in ~/.gitcofig.local
+# e.g. Company's email
+[include]
+	path = ~/.gitconfig.local
+	
