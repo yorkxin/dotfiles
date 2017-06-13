@@ -3,6 +3,7 @@ cask_args appdir: '/Applications', force: true
 
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
+tap 'caskroom/versions'
 tap 'universal-ctags/universal-ctags'
 
 brew 'aria2'
