@@ -7,3 +7,6 @@
 # symlink rc files from ./rc/ to ~/
 ./install-rc.sh
 
+# run all installers
+./run-all-installers.sh
+
