@@ -26,6 +26,7 @@ brew 'tree'
 brew 'universal-ctags', args: ['HEAD']
 brew 'wget'
 brew 'xz'
+brew 'z'
 brew 'zsh-syntax-highlighting'
 
 cask '0xed'
@@ -67,6 +68,7 @@ cask 'vlc'
 
 # Fonts
 cask 'font-fira-code'
+cask 'font-fira-mono'
 cask 'font-fira-sans'
 # FIXME: genn jyuu font download is slow (even from Japan)
 # cask 'font-genjyuugothic'
