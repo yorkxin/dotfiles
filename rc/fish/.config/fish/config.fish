@@ -1,4 +1,5 @@
 set -x PATH $PATH ~/go/bin 
+set -x LANG en_US.UTF-8
 
 set -g fish_pager_color_progress cyan
 set -g EDITOR vim
