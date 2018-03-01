@@ -15,6 +15,7 @@ abbr gg 'git grep'
 abbr gll 'git pull'
 abbr gp 'git push'
 abbr gs 'git status'
+abbr ga 'git add'
 
 abbr reveal 'open -R'
 abbr mm 'middleman'
