@@ -17,6 +17,8 @@ abbr gp 'git push'
 abbr gs 'git status'
 abbr ga 'git add'
 abbr grbi 'git rebase -i'
+abbr grbc 'git rebase --continue' 
+abbr grba 'git rebase --abort' 
 
 abbr reveal 'open -R'
 abbr mm 'middleman'
