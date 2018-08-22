@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # install homebrew formulae
 ./install-brew.sh
 
@@ -9,3 +11,6 @@
 
 # Install tools that cannot be installed by Homebrew
 ./install-tools.sh
+
+# Apply macOS preferences
+./macos.sh
