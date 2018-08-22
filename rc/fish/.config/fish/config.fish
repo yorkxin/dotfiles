@@ -1,10 +1,6 @@
-set -x LANG en_US.UTF-8
+bass source ~/.profile
 
 set -g fish_pager_color_progress cyan
-set -g EDITOR vim
-set -g GPG_TTY (tty)
-
-[ -d ~/go/bin ] ; and set -x PATH $PATH ~/go/bin
 
 abbr l 'ls -laF'
 abbr md 'mkdir -p'
@@ -18,8 +14,8 @@ abbr gpuh 'git push -u origin head'
 abbr gs 'git status'
 abbr ga 'git add'
 abbr grbi 'git rebase -i'
-abbr grbc 'git rebase --continue' 
-abbr grba 'git rebase --abort' 
+abbr grbc 'git rebase --continue'
+abbr grba 'git rebase --abort'
 
 abbr reveal 'open -R'
 abbr mm 'middleman'
