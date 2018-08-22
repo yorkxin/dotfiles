@@ -37,33 +37,26 @@ cask 'firefox-developer-edition'
 cask 'fork'
 cask 'gitup'
 cask 'google-japanese-ime'
-cask 'google-chrome-beta'
 cask 'google-chrome-canary'
 cask 'gpg-suite'
-cask 'iina'
 cask 'imageoptim'
 cask 'istat-menus'
 cask 'iterm2'
 cask 'kap'
 cask 'kitematic'
-cask 'macdown'
 cask 'macvim'
-cask 'mplayerx'
 cask 'paw'
 cask 'postgres'
 cask 'psequel'
 cask 'rowanj-gitx'
 cask 'safari-technology-preview'
 cask 'sequel-pro'
-cask 'skype'
-cask 'spotify'
+cask 'slack'
 cask 'sublime-text'
-cask 'typora'
 cask 'unicodechecker'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
-cask 'vlc'
 
 # Fonts
 cask 'font-fira-code'
@@ -84,13 +77,7 @@ cask 'font-source-han-sans'
 # cask 'font-source-han-serif-el-m'
 # cask 'font-source-han-serif-sb-h'
 
-mas 'Debit & Credit', id: 882637653
 mas 'The Unarchiver', id: 425424353
-mas 'ForkLift', id: 412448059
-
-mas 'Slack', id: 803453959
-mas 'LINE', id: 539883307
-mas 'Telegram', id: 747648890
 
 mas 'Pages', id: 409201541
 mas 'Numbers', id: 409203825
@@ -98,9 +85,7 @@ mas 'Keynote', id: 409183694
 
 mas 'Xcode', id: 497799835
 mas 'Base', id: 402383384
-mas 'TermHere', id: 1114363220
 mas 'Sip', id: 507257563
-mas 'Pixelmator', id: 407963104
 
 # TODO: enable this after I purchase
 # mas 'medis', id: 1063631769
