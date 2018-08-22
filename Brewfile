@@ -5,9 +5,7 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'heroku/brew'
-tap 'universal-ctags/universal-ctags'
 
-brew 'aria2'
 brew 'colordiff'
 brew 'diff-so-fancy'
 brew 'fish'
@@ -25,26 +23,22 @@ brew 'ruby-build'
 brew 'stow'
 brew 'the_silver_searcher'
 brew 'tree'
-brew 'universal-ctags', args: ['HEAD']
 brew 'wget'
 brew 'xz'
 brew 'z'
-# brew 'zsh-syntax-highlighting'
 
 brew 'heroku/brew/heroku'
 
 cask '0xed'
-cask 'atom'
 cask 'dash'
 cask 'docker'
 cask 'firefox'
-cask 'firefoxdeveloperedition'
+cask 'firefox-developer-edition'
 cask 'fork'
 cask 'gitup'
 cask 'google-japanese-ime'
 cask 'google-chrome-beta'
 cask 'google-chrome-canary'
-cask 'google-photos-backup'
 cask 'gpg-suite'
 cask 'iina'
 cask 'imageoptim'
@@ -54,7 +48,6 @@ cask 'kap'
 cask 'kitematic'
 cask 'macdown'
 cask 'macvim'
-cask 'medis'
 cask 'mplayerx'
 cask 'paw'
 cask 'postgres'
@@ -108,3 +101,6 @@ mas 'Base', id: 402383384
 mas 'TermHere', id: 1114363220
 mas 'Sip', id: 507257563
 mas 'Pixelmator', id: 407963104
+
+# TODO: enable this after I purchase
+# mas 'medis', id: 1063631769

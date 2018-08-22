@@ -5,3 +5,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 sh ./installer/scm_breeze.sh
 
+brew install 'zsh-syntax-highlighting'
