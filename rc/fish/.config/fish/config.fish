@@ -1,5 +1,7 @@
 bass source ~/.profile
 
+rbenv init - | source
+
 set -g fish_pager_color_progress cyan
 
 abbr l 'ls -laF'
