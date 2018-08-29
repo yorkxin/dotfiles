@@ -17,4 +17,8 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
+# Trackpad: enable tap to click
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
