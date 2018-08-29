@@ -1,4 +1,4 @@
 #!/bin/sh
 cd rc
-stow -vv * --target ~
+stow --no-folding -vv * --target ~
 
