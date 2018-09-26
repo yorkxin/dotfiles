@@ -22,3 +22,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+# Antialiasing - macOS 10.14+ has a blurry default smoothing
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
+
