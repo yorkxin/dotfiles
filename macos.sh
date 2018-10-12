@@ -22,3 +22,8 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+# macOS 10.14 font smoothing on external display
+# See http://osxdaily.com/2018/09/26/fix-blurry-thin-fonts-text-macos-mojave/
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+
+
