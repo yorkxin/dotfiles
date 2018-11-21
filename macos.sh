@@ -24,6 +24,7 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # macOS 10.14 font smoothing on external display
 # See http://osxdaily.com/2018/09/26/fix-blurry-thin-fonts-text-macos-mojave/
-defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+# Use this only when on an enviornment with external display.
+# defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 
 
