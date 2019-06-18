@@ -21,8 +21,23 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = ~/.gitignore
 
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+	
+[commit]
+	gpgsign = true
+# NOTE: to make gpg signature work:
+# 1. Install GPG Suite from https://gpgtools.org
+# 2. Import or Generate GPG Key Pairs
+# 3. Update GPG Public Key to GitHub
+# 4. echo 'no-tty' >> ~/.gnupg/gpg.conf
+# 5. Add the following snippets to .gitconfig.local:
+#
+# [user]
+# 	signingkey = xxxxxxxxxxxxxxxx # sec key from `gpg --list-secret-keys --keyid-format LONG`
+
 # Add all machine-specific settings in ~/.gitcofig.local
-# e.g. Company's email
+# e.g. Company's email, signingkey
 [include]
 	path = ~/.gitconfig.local
 	
