@@ -8,7 +8,9 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'SFMono-Light, Fira Code, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'SF Mono, Fira Code, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+
+    fontWeight: 300,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -86,7 +88,7 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: true
+    copyOnSelect: false
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
