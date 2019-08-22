@@ -4,6 +4,4 @@ fisherman/fzy
 fisherman/getopts
 fisherman/git_util
 fisherman/nvm
-fisherman/pyenv
-fisherman/rbenv
 fisherman/z

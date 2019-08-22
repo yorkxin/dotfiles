@@ -12,12 +12,6 @@ export GPG_TTY=$(tty)
 # Rust Cargo
 [ -d ~/.cargo/bin ] && export PATH=$PATH:~/.cargo/bin
 
-# Python from pyenv
-[ -d ~/.local/bin ] && export PATH=$PATH:~/.local/bin
-
-# Python from Installer
-[ -d ~/Library/Python/2.7/bin ] && export PATH=$PATH:~/Library/Python/2.7/bin
-
 # Postgres.app
 [ -d /Applications/Postgres.app/Contents/Versions/latest/bin ] && export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 

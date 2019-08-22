@@ -1,7 +1,5 @@
 bass source ~/.profile
 
-rbenv init - | source
-
 set -g fish_pager_color_progress cyan
 
 abbr l 'ls -laF'
@@ -30,3 +28,4 @@ abbr brake 'bundle exec rake'
 set FISH_LOCAL_CONFIG "$HOME/.config/fish/config.local.fish"
 [ -f $FISH_LOCAL_CONFIG ] ; and source $FISH_LOCAL_CONFIG
 
+source /usr/local/opt/asdf/asdf.fish
