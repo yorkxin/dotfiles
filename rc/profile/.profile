@@ -8,6 +8,12 @@ export GPG_TTY=$(tty)
 # Golang
 [ -d ~/go/bin ] && export PATH=$PATH:~/go/bin
 
+# Python from pyenv
+[ -d ~/.local/bin ] && export PATH=$PATH:~/.local/bin
+
+# Python from Installer
+[ -d ~/Library/Python/2.7/bin ] && export PATH=$PATH:~/Library/Python/2.7/bin
+
 # Postgres.app
 [ -d /Applications/Postgres.app/Contents/Versions/latest/bin ] && export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
