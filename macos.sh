@@ -27,4 +27,7 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # Use this only when on an enviornment with external display.
 # defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 
+# Enforce best sound quality for Bluetooth headphones.
+# See https://www.macrumors.com/how-to/enable-aptx-aac-bluetooth-audio-codecs-macos/
+sudo defaults write bluetoothaudiod "Enable AptX codec" -bool true 
 
