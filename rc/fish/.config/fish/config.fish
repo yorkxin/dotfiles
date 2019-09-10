@@ -4,7 +4,8 @@ rbenv init - | source
 
 set -g fish_pager_color_progress cyan
 
-abbr l 'ls -laF'
+abbr l 'exa -lahF --git'
+abbr tree 'exa --tree -a'
 abbr md 'mkdir -p'
 
 abbr g 'git'
