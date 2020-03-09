@@ -11,6 +11,7 @@
 	st = status
 	br = branch
 	satsh = stash
+	rebsae = rebase
 [grep]
 	lineNumber = true
 [filter "lfs"]
