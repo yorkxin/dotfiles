@@ -14,7 +14,7 @@ Then install tools required:
 
 Then download the git repository:
 
-    $ git clone git@github.com:chitsaou/dotfiles.git ~/.dotfiles
+    $ git clone git@github.com:yorkxin/dotfiles.git ~/.dotfiles
 
 ## How to use
 
