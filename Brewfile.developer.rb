@@ -1,7 +1,6 @@
 #vi: syntax=ruby
 cask_args appdir: '/Applications', force: true
 
-tap 'caskroom/cask'
 tap 'caskroom/fonts'
 
 brew 'colordiff'
