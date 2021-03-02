@@ -20,7 +20,7 @@ brew 'wget'
 brew 'xz'
 brew 'z'
 
-cask '0xed'
+cask 'hex-fiend'
 cask 'dash'
 cask 'docker'
 cask 'firefox'
