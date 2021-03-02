@@ -1,7 +1,5 @@
 bass source ~/.profile
 
-rbenv init - | source
-
 set -g fish_pager_color_progress cyan
 
 abbr l 'exa -lha'
@@ -22,11 +20,7 @@ abbr grbc 'git rebase --continue'
 abbr grba 'git rebase --abort'
 
 abbr reveal 'open -R'
-abbr mm 'middleman'
 abbr diff 'colordiff'
-
-abbr be 'bundle exec'
-abbr brake 'bundle exec rake'
 
 # Load local inits
 set FISH_LOCAL_CONFIG "$HOME/.config/fish/config.local.fish"

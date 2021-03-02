@@ -3,8 +3,6 @@ cask_args appdir: '/Applications', force: true
 
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
-tap 'caskroom/versions'
-tap 'heroku/brew'
 
 brew 'colordiff'
 brew 'diff-so-fancy'
@@ -16,19 +14,11 @@ brew 'gnu-sed'
 brew 'httpie'
 brew 'mas'
 brew 'mtr'
-brew 'pyenv'
-brew 'rbenv'
-brew 'rbenv-default-gems'
-brew 'readline'
-brew 'redis'
-brew 'ruby-build'
 brew 'stow'
 brew 'the_silver_searcher'
 brew 'wget'
 brew 'xz'
 brew 'z'
-
-brew 'heroku/brew/heroku'
 
 cask '0xed'
 cask 'dash'
@@ -37,7 +27,6 @@ cask 'firefox'
 cask 'firefox-developer-edition'
 cask 'fork'
 cask 'gitup'
-cask 'google-chrome-canary'
 cask 'gpg-suite'
 cask 'imageoptim'
 cask 'istat-menus'
@@ -75,14 +64,6 @@ cask 'font-source-han-sans'
 # cask 'font-source-han-serif-sb-h'
 
 mas 'The Unarchiver', id: 425424353
-
-mas 'Pages', id: 409201541
-mas 'Numbers', id: 409203825
-mas 'Keynote', id: 409183694
-
-mas 'Xcode', id: 497799835
-mas 'Base', id: 402383384
-mas 'Sip', id: 507257563
 
 # TODO: enable this after I purchase
 # mas 'medis', id: 1063631769

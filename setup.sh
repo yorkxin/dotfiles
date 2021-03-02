@@ -9,8 +9,6 @@
 # symlink rc files from ./rc/ to ~/
 ./install-rc.sh
 
-# Install tools that cannot be installed by Homebrew
-./install-tools.sh
 # install fisher plugins (depends on ~/.config/fish/fish_plugins)
 ./install-fisher.fish
 
