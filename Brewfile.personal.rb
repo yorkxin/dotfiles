@@ -12,8 +12,4 @@ mas 'Debit & Credit', id: 882637653
 
 mas 'The Unarchiver', id: 425424353
 
-mas 'Pages', id: 409201541
-mas 'Numbers', id: 409203825
-mas 'Keynote', id: 409183694
-
 mas 'Pixelmator', id: 407963104
