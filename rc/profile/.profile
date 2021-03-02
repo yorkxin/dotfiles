@@ -10,5 +10,6 @@ export GPG_TTY=$(tty)
 export HOMEBREW_NO_GITHUB_API=1
 
 # Golang
-[ -d ~/go/bin ] && export PATH=$PATH:~/go/bin
+export GOPATH=$HOME/go
+[ -d $GOPATH/bin ] && export PATH=$PATH:$GOPATH/bin
 
