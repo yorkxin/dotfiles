@@ -11,6 +11,8 @@
 
 # Install tools that cannot be installed by Homebrew
 ./install-tools.sh
+# install fisher plugins (depends on ~/.config/fish/fish_plugins)
+./install-fisher.fish
 
 # Apply macOS preferences
 ./macos.sh
