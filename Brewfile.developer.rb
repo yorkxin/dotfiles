@@ -52,11 +52,12 @@ cask 'font-inconsolata'
 cask 'font-input'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
 cask 'font-source-han-sans'
 # FIXME: 1.001 does not available on Cask fonts. Try this later when it gets fixed
 # cask 'font-source-han-serif-el-m'
 # cask 'font-source-han-serif-sb-h'
+cask 'font-jetbrains-mono'
+cask 'font-sf-mono'
 
 mas 'The Unarchiver', id: 425424353
 
