@@ -13,3 +13,5 @@ export HOMEBREW_NO_GITHUB_API=1
 export GOPATH=$HOME/go
 [ -d $GOPATH/bin ] && export PATH=$PATH:$GOPATH/bin
 
+# Homebrew sbin
+export PATH=$PATH:/usr/local/sbin
