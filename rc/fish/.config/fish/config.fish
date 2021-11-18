@@ -1,4 +1,6 @@
-bass source ~/.profile
+if type -q bass
+  bass source ~/.profile
+end
 
 set -g fish_pager_color_progress cyan
 
@@ -26,3 +28,5 @@ abbr diff 'colordiff'
 set FISH_LOCAL_CONFIG "$HOME/.config/fish/config.local.fish"
 [ -f $FISH_LOCAL_CONFIG ] ; and source $FISH_LOCAL_CONFIG
 
+fish_add_path /opt/homebrew/bin
+fish_add_path /opt/homebrew/sbin

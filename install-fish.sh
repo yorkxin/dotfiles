@@ -1,4 +1,6 @@
-#!/bin/sh -e
+#!/usr/bin/env bash
+
+set -euo pipefail
 
 FISH_BIN=`which fish`
 
@@ -15,5 +17,3 @@ else
   echo "Adding Fish to /etc/shells with sudo. Please approve:"
   sudo sh -c "echo $FISH_BIN >> /etc/shells"
 fi
-
-
