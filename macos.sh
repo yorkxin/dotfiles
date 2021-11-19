@@ -1,5 +1,6 @@
-#!/bin/sh -x
+#!/usr/bin/env bash
 
+set -euxo pipefail
 # Some ideas from:
 # - https://mths.be/macos
 
@@ -29,5 +30,4 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Enforce best sound quality for Bluetooth headphones.
 # See https://www.macrumors.com/how-to/enable-aptx-aac-bluetooth-audio-codecs-macos/
-sudo defaults write bluetoothaudiod "Enable AptX codec" -bool true 
-
+sudo defaults write bluetoothaudiod "Enable AptX codec" -bool true

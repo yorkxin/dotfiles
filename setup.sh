@@ -1,16 +1,20 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
+set -euo pipefail
 
 # install homebrew formulae
-./install-brew.sh
+brew tap Homebrew/bundle
+brew bundle
+brew cleanup
 
 # install fish
 ./install-fish.sh
 
-# symlink rc files from ./rc/ to ~/
-./install-rc.sh
-
 # install fisher plugins (depends on ~/.config/fish/fish_plugins)
 ./install-fisher.fish
+
+# symlink rc files from ./rc/ to ~/
+./install-rc.sh
 
 # Apply macOS preferences
 ./macos.sh
