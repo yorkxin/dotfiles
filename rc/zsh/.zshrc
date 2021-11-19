@@ -64,10 +64,11 @@ plugins=(
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+[ -s "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
+[ -f " $ZSH/oh-my-zsh.sh" ] && source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -96,14 +97,9 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
-# remove alias of bcn from "bundler" plugin, in order to use degica/barcelona-cli
-unalias bcn
-
-[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -115,6 +111,3 @@ export PATH="$PATH:$HOME/go/bin"
 
 GPG_TTY=$(tty)
 export GPG_TTY
-
-. /usr/local/etc/profile.d/z.sh
-
