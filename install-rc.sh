@@ -3,4 +3,4 @@
 set -euo pipefail
 
 cd rc
-stow --no-folding * --target ~
+stow --no-folding --target ~ -- *
