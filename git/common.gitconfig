@@ -1,6 +1,6 @@
 [user]
 	name = Yucheng Chuang
-	email = ducksteven@gmail.com
+    # NOTE: intentionally left email as unset, so that I will be requested to set a work email on a work machine.
 [push]
 	default = simple
 [color]
@@ -28,20 +28,6 @@
 	
 [commit]
 	gpgsign = true
-# NOTE: to make gpg signature work:
-# 1. Install GPG Suite from https://gpgtools.org
-# 2. Import or Generate GPG Key Pairs
-# 3. Update GPG Public Key to GitHub
-# 4. echo 'no-tty' >> ~/.gnupg/gpg.conf
-# 5. Add the following snippets to .gitconfig.local:
-#
-# [user]
-# 	signingkey = xxxxxxxxxxxxxxxx # sec key from `gpg --list-secret-keys --keyid-format LONG`
-
-# Add all machine-specific settings in ~/.gitcofig.local
-# e.g. Company's email, signingkey
-[include]
-	path = ~/.gitconfig.local
 	
 [merge "npm-merge-driver"]
 	name = automatically merge npm lockfiles

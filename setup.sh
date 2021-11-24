@@ -9,6 +9,13 @@ brew cleanup
 
 ./setup-fish.sh
 
+if [ -f "$HOME/.gitconfig" ]; then
+  echo "[git] $HOME/.gitconfig already exists. Skip"
+  # TODO: check if .gitconfig includes ~/.dotfiles/common.gitconfig
+else
+  cp "./git/template.gitconfig" "$HOME/.gitconfig"
+fi
+
 # symlink rc files from ./rc/ to ~/
 ./install-rc.sh
 

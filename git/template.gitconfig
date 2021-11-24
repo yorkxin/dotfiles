@@ -1,0 +1,16 @@
+# Put my machine-specific config here.
+# This file was copied from ~/.dotfiles/git/template.gitconfig
+
+[include]
+	path = ~/.dotfiles/git/common.gitconfig
+
+[user]
+	email = xxxxxxxxxxxxxxxx
+# NOTE: to make gpg signature work:
+# 1. Install GPG Suite from https://gpgtools.org
+# 2. Import or Generate GPG Key Pairs
+# 3. Upload GPG Public Key to GitHub
+# 4. echo 'no-tty' >> ~/.gnupg/gpg.conf
+# 5. Get secret key from `gpg --list-secret-keys --keyid-format LONG`
+# 6. Edit the next line, replace xxx's with the secret key ID above:
+	signingkey = xxxxxxxxxxxxxxxx
