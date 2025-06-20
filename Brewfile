@@ -4,16 +4,16 @@ tap 'homebrew/cask-fonts'
 brew 'colordiff'
 brew 'diff-so-fancy'
 brew 'dust' # du alternative
-brew 'exa' # ls alternative
+brew 'eza' # ls alternative
 brew 'svn' # certain fonts use this
 brew 'fish'
 brew 'git'
 brew 'mtr'
 brew 'stow'
-brew 'the_silver_searcher'
+brew 'ripgrep'
 brew 'wget'
 brew 'xz'
-brew 'z'
+brew 'z' # for Fish, use https://github.com/jethrokuan/z instead
 brew 'shellcheck'
 
 # Fonts
