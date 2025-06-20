@@ -1,7 +1,7 @@
 if status is-interactive
-  abbr l 'exa -lha'
-  abbr ll 'exa -lhaF --git'
-  abbr tree 'exa --tree -a'
+  abbr l 'eza -lha'
+  abbr ll 'eza -lhaF --git'
+  abbr tree 'eza --tree -a'
   abbr md 'mkdir -p'
   
   abbr g 'git'
