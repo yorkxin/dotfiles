@@ -1,3 +1,5 @@
 function git_clear_branches
-  git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+    # $ brew install gum
+    # See https://github.com/charmbracelet/gum/
+    git branch | grep -Ev "master|main|\*" | sed -E "s/^[ ]+//" | gum choose --no-limit --selected='*' --unselected-prefix='[ ] ' --selected-prefix='[x] ' --header='Choose branches to delete:' | xargs -n 1 git branch -D
 end
