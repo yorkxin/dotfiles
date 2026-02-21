@@ -2,7 +2,7 @@
 
 My configurations
 
-## Before use
+## Setup
 
 The setup script depends on some tools:
 
@@ -12,17 +12,24 @@ Then install tools required:
 
     $ brew install git chezmoi
 
-Then download the git repository:
+Then init chezmoi with this repo:
 
-    $ git clone git@github.com:yorkxin/dotfiles.git ~/.local/share/chezmoi
+    $ chezmoi init git@github.com:yorkxin/dotfiles.git
 
-## How to use
+For new machine, it's safer to run apply in dryrun mode (`-n`)
 
-### Apply Settings (RC Files)
+    $ chezmoi apply -nv
+
+Copy files to home
 
     $ chezmoi apply
 
-### macOS
+Edit and apply config    
+
+    $ chezmoi edit-config
+    $ chezmoi apply
+
+## macOS
 
     $ cd scripts
     $ brew bundle
@@ -30,7 +37,7 @@ Then download the git repository:
 
 ## Tools used
 
-* chezmoi
+* [chezmoi](https://www.chezmoi.io)
 * [Homebrew bundle](https://docs.brew.sh/Manpage#bundle-subcommand)
 
 ## License
