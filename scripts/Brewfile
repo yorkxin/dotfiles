@@ -1,0 +1,46 @@
+#vi: syntax=ruby
+
+brew 'bat'
+brew 'diff-so-fancy'
+brew 'dust' # du alternative
+brew 'eza' # ls alternative
+brew 'git-delta'
+brew 'gum'
+brew 'mise'
+brew 'neovim'
+brew 'svn' # certain fonts use this
+brew 'fish'
+brew 'fzf'
+brew 'git'
+brew 'ripgrep'
+brew 'shellcheck'
+brew 'television'
+brew 'wget'
+brew 'xz'
+brew 'zoxide'
+
+# Fonts
+cask 'font-adwaita'
+cask 'font-fira-sans'
+cask 'font-geist-mono'
+cask 'font-geist-mono-nerd-font'
+cask 'font-google-sans-code'
+cask 'font-maple-mono'
+cask 'font-maple-mono-normal'
+cask 'font-monaspace'
+cask 'font-monaspace-var'
+cask 'font-mononoki'
+cask 'font-mononoki-nerd-font'
+cask 'font-symbols-only-nerd-font'
+cask 'font-fira-code'
+cask 'font-fira-mono'
+cask 'font-fira-sans'
+cask 'font-hack'
+cask 'font-ibm-plex-mono'
+cask 'font-inconsolata'
+cask 'font-input'
+cask 'font-jetbrains-mono'
+cask 'font-sf-mono'
+cask 'font-source-code-pro'
+
+cask '1password-cli'

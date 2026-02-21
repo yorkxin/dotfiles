@@ -1,0 +1,64 @@
+# vim: set filetype=gitconfig: 
+
+## NOTE: before using this file, set variables in ~/.config/chezmoi/chezmoi.toml
+
+[user]
+	name = Yucheng Chuang
+	email = {{ .email | quote }}
+	signingkey = {{ .git_ssh_signingkey | quote }}
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  # 1Password: https://developer.1password.com/docs/ssh/git-commit-signing/ 
+  # pub key on disk: https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key
+  program = {{ .git_signing_program | quote }} 
+
+[commit]
+  gpgsign = true
+
+[push]
+	default = simple
+	autoSetupRemote = true
+
+[color]
+	ui = true
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	satsh = stash
+	rebsae = rebase
+
+[grep]
+	lineNumber = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
+
+[core]
+        pager = delta
+ 
+[pull]
+        ff = only
+ 
+[init]
+        defaultBranch = main
+
+[interactive]
+        diffFilter = delta --color-only
+
+[delta]
+        navigate = true
+        line-numbers = true
+
+
+[merge]
+        conflictStyle = zdiff3
+
