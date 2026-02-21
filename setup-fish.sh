@@ -15,4 +15,3 @@ echo "Changing default shell for $(whoami) to Fish with sudo. Please approve:"
 
 sudo chsh -s "$FISH_BIN" "$(whoami)"
 
-fish ./fisher/install-fisher.fish
