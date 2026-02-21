@@ -31,4 +31,8 @@ if status is-interactive
     if type -q delta
         abbr diff delta
     end
+
+    if type -q nvim
+        abbr n nvim
+    end
 end
