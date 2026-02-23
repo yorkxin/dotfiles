@@ -1,5 +1,7 @@
-[data]
-    email = "ducksteven@gmail.com"
-    git_ssh_signingkey = "ssh-ed25519 ..."
-    git_signing_program = "/path/to/op-ssh-sign"
+{{ $email := promptStringOnce . "email" "Enter email address" -}}
+{{ $git_ssh_signingkey := promptStringOnce . "git_ssh_signingkey" "Git SSH Signing Key (can setup later)" "ssh-ed25519 ..." -}}
 
+[data]
+    email = {{ $email | quote }}
+    git_ssh_signingkey = {{ $git_ssh_signingkey | quote }}
+    git_signing_program = "/path/to/op-ssh-sign"
