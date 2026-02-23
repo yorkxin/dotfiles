@@ -1,7 +1,8 @@
 {{ $email := promptStringOnce . "email" "Enter email address" -}}
 {{ $git_ssh_signingkey := promptStringOnce . "git_ssh_signingkey" "Git SSH Signing Key (can setup later)" "ssh-ed25519 ..." -}}
+{{ $op_ssh_sign_binary := findExecutable "op-ssh-sign" (list "/Applications/1Password.app/Contents/MacOS") }}
 
 [data]
     email = {{ $email | quote }}
     git_ssh_signingkey = {{ $git_ssh_signingkey | quote }}
-    git_signing_program = "/path/to/op-ssh-sign"
+    git_signing_program = {{ $op_ssh_sign_binary | quote }}
