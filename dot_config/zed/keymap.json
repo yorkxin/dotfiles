@@ -1,0 +1,84 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "file_finder::Toggle",
+      "ctrl-tab": "tab_switcher::OpenInActivePane",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space s": "project_symbols::Toggle",
+      "space o": "outline::Toggle",
+      "space ,": "tab_switcher::OpenInActivePane",
+      "space e": "project_panel::ToggleFocus",
+      "space a": "git::Blame",
+      "space b": "editor::ToggleBreakpoint",
+      "space r": "editor::SpawnNearestTask",
+      "space /": [
+        "task::Spawn",
+        { "task_name": "text_finder", "reveal_target": "center" },
+      ],
+      "space space": [
+        "task::Spawn",
+        { "task_name": "file_finder", "reveal_target": "center" },
+      ],
+      "ctrl-w h": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "left" },
+      ],
+      "ctrl-w l": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "right" },
+      ],
+    },
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual)",
+    "bindings": {
+      "[ [": "vim::PreviousMethodStart",
+      "] ]": "vim::NextMethodStart",
+    },
+  },
+  {
+    "context": "Terminal || (Editor && (vim_mode == normal || vim_mode == visual))",
+    "bindings": {
+      "ctrl-w ctrl-t": "terminal_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      // disabled due to conflicts with which-key timeout
+      "space": null,
+    },
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      // disabled due to conflicts with which-key timeout
+      "ctrl-w": null,
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // disabled due to conflicts with which-key timeout
+      "ctrl-w": null,
+    },
+  },
+]

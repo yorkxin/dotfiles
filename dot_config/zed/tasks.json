@@ -1,0 +1,30 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
+[
+    {
+        "label": "rspec $ZED_RELATIVE_FILE:$ZED_ROW",
+        "command": "$ZED_WORKTREE_ROOT/bin/rspec",
+        "args": ["\"$ZED_RELATIVE_FILE:$ZED_ROW\""],
+        "show_command": true,
+        "show_summary": true,
+        "tags": ["ruby-test"],
+    },
+    {
+        // Requires `television`. See https://github.com/zed-industries/zed/discussions/22581
+        "label": "file_finder",
+        "command": "zed \"$(tv files)\"",
+        "hide": "always",
+        "allow_concurrent_runs": true,
+        "use_new_terminal": true,
+    },
+    {
+        // Requires `television`. See https://github.com/zed-industries/zed/discussions/22581
+        "label": "text_finder",
+        "command": "zed \"$(tv text)\"",
+        "hide": "always",
+        "allow_concurrent_runs": true,
+        "use_new_terminal": true,
+        "shell": {
+            "program": "sh",
+        },
+    },
+]

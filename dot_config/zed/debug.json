@@ -1,0 +1,39 @@
+// Some example tasks for common languages.
+//
+// For more documentation on how to configure debug tasks,
+// see: https://zed.dev/docs/debugger
+[
+  {
+    "label": "Debug active JavaScript file",
+    "adapter": "JavaScript",
+    "program": "$ZED_FILE",
+    "request": "launch",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "type": "pwa-node",
+  },
+  {
+    "label": "JavaScript debug terminal",
+    "adapter": "JavaScript",
+    "request": "launch",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "console": "integratedTerminal",
+    "type": "pwa-node",
+  },
+  {
+    "label": "Debug Rails server",
+    "adapter": "rdbg",
+    "request": "launch",
+    "command": "$ZED_WORKTREE_ROOT/bin/rails",
+    "args": ["server"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "env": {
+      "RUBY_DEBUG_OPEN": "true",
+    },
+  },
+  {
+    "label": "Attach RDBG",
+    "adapter": "rdbg",
+    "request": "attach",
+    "cwd": "$ZED_WORKTREE_ROOT",
+  },
+]
