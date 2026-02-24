@@ -4,7 +4,7 @@ if status is-interactive
     if type -q eza
         abbr l 'eza -lah'
         abbr la 'eza -laF --git'
-        abbr ls 'eza -Fh --git'
+        abbr ls 'eza -hF --git'
         abbr ll 'eza -lahF --git'
         abbr tree 'eza --tree -aF --git'
     else
