@@ -1,28 +1,32 @@
-# vim: set filetype=gitconfig:
+# vim: set filetype=gitconfig ts=8 sw=8 sts=8 noet :
 
 ## NOTE: before using this file, set variables in ~/.config/chezmoi/chezmoi.toml
 
 [user]
-	name = Yucheng Chuang
+	name = Yu-Cheng Chuang
 	email = {{ .email | quote }}
 	signingkey = {{ .git_ssh_signingkey | quote }}
 
 [gpg]
-  format = ssh
+	format = ssh
 
-{{ if .git_signing_program }}
 [gpg "ssh"]
-  # 1Password: https://developer.1password.com/docs/ssh/git-commit-signing/
-  # pub key on disk: https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key
-  program = {{ .git_signing_program | quote }}
-{{ end }}
+{{- if .git_signing_program }}
+	# 1Password: https://developer.1password.com/docs/ssh/git-commit-signing/
+	# pub key on disk: https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key
+	program = {{ .git_signing_program | quote }}
+{{- end }}
+	allowedSignersFile = "~/.config/git/allowed_signers"
 
 [commit]
-  gpgsign = true
+	gpgsign = true
 
 [push]
 	default = simple
 	autoSetupRemote = true
+
+[pull]
+        ff = only
 
 [color]
 	ui = true
@@ -45,10 +49,8 @@
 	process = git-lfs filter-process
 
 [core]
+	# excludesFile = ~/.gitignore  # ... use .config/git/ignore instead
         pager = delta
-
-[pull]
-        ff = only
 
 [init]
         defaultBranch = main

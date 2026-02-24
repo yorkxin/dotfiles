@@ -3,8 +3,10 @@ if status is-interactive
 
     if type -q eza
         abbr l 'eza -lah'
+        abbr la 'eza -laF --git'
+        abbr ls 'eza -Fh --git'
         abbr ll 'eza -lahF --git'
-        abbr tree 'eza --tree -a'
+        abbr tree 'eza --tree -aF --git'
     else
         abbr l 'ls -lah'
         abbr ll 'ls -lahF'
@@ -34,5 +36,13 @@ if status is-interactive
 
     if type -q nvim
         abbr n nvim
+    end
+
+    if type -q docker
+        abbr dc 'docker compose'
+    end
+
+    if type -q bundle
+        abbr be 'bundle exec'
     end
 end
