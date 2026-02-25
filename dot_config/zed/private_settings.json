@@ -188,4 +188,15 @@
     "light": "One Light",
     "dark": "JetBrains Dark",
   },
+  "languages": {
+    "Ruby": {
+      "language_servers": [
+        "ruby-lsp",
+        "!solargraph",
+        "!rubocop",
+        "!steep",
+        "!sorbet",
+      ],
+    },
+  },
 }
