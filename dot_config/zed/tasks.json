@@ -1,30 +1,55 @@
 // Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
 [
-    {
-        "label": "rspec $ZED_RELATIVE_FILE:$ZED_ROW",
-        "command": "$ZED_WORKTREE_ROOT/bin/rspec",
-        "args": ["\"$ZED_RELATIVE_FILE:$ZED_ROW\""],
-        "show_command": true,
-        "show_summary": true,
-        "tags": ["ruby-test"],
+  {
+    // Requires `television`. See https://github.com/zed-industries/zed/discussions/22581
+    "label": "tv:file_finder",
+    "command": "zed \"$(tv files)\"",
+    "hide": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true,
+  },
+  {
+    // Requires `television`. See https://github.com/zed-industries/zed/discussions/22581
+    "label": "tv:text_finder",
+    "command": "zed \"$(tv text)\"",
+    "hide": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true,
+    "shell": {
+      "program": "sh",
     },
-    {
-        // Requires `television`. See https://github.com/zed-industries/zed/discussions/22581
-        "label": "file_finder",
-        "command": "zed \"$(tv files)\"",
-        "hide": "always",
-        "allow_concurrent_runs": true,
-        "use_new_terminal": true,
+  },
+  {
+    // Requires `television`. See https://github.com/zed-industries/zed/discussions/22581
+    "label": "tv:find_text_in_files",
+    "command": "zed \"$(tv --input '${ZED_SELECTED_TEXT:-}' --exact text)\"",
+    "hide": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true,
+    "shell": {
+      "program": "sh",
     },
-    {
-        // Requires `television`. See https://github.com/zed-industries/zed/discussions/22581
-        "label": "text_finder",
-        "command": "zed \"$(tv text)\"",
-        "hide": "always",
-        "allow_concurrent_runs": true,
-        "use_new_terminal": true,
-        "shell": {
-            "program": "sh",
-        },
+  },
+  {
+    // Requires `television`. See https://github.com/zed-industries/zed/discussions/22581
+    "label": "tv:look_for_file",
+    "command": "zed \"$(tv --input '${ZED_SELECTED_TEXT:-}' --select-1 --exact files)\"",
+    "hide": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true,
+    "shell": {
+      "program": "sh",
     },
+  },
+  {
+    // Requires `fzf` and `bat`
+    "label": "fzf:look_for_file",
+    "command": "zed \"$(fzf --query '${ZED_SELECTED_TEXT:-}' --select-1 --preview 'bat --color=always {}')\"",
+    "hide": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true,
+    "shell": {
+      "program": "sh",
+    },
+  },
 ]

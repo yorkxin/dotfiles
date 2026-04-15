@@ -29,13 +29,19 @@
       "space a": "git::Blame",
       "space b": "editor::ToggleBreakpoint",
       "space r": "editor::SpawnNearestTask",
+      "space space": [
+        "action::Sequence",
+        [
+          ["editor::SelectLargerSyntaxNode", {}],
+          [
+            "task::Spawn",
+            { "task_name": "fzf:look_for_file", "reveal_target": "center" },
+          ],
+        ],
+      ],
       "space /": [
         "task::Spawn",
-        { "task_name": "text_finder", "reveal_target": "center" },
-      ],
-      "space space": [
-        "task::Spawn",
-        { "task_name": "file_finder", "reveal_target": "center" },
+        { "task_name": "tv:text_finder", "reveal_target": "center" },
       ],
       "ctrl-w h": [
         "workspace::MoveItemToPaneInDirection",
@@ -52,6 +58,19 @@
     "bindings": {
       "[ [": "vim::PreviousMethodStart",
       "] ]": "vim::NextMethodStart",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "space space": [
+        "task::Spawn",
+        { "task_name": "fzf:look_for_file", "reveal_target": "center" },
+      ],
+      "space /": [
+        "task::Spawn",
+        { "task_name": "tv:find_text_in_files", "reveal_target": "center" },
+      ],
     },
   },
   {
