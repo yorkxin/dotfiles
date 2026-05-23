@@ -2,3 +2,10 @@
 LICENSE
 README.md
 scripts/
+
+{{ if ne .chezmoi.os "darwin" }}
+Library/Application Support/com.mitchellh.ghostty/config
+{{ end }}
+{{ if ne .chezmoi.os "linux" }}
+.config/ghostty/config
+{{ end }}
